@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>In Real Life</title>
+		<link rel="stylesheet" href="IRLstyles.css">
+	</head>
+	<body>
+		<div id="container">
+		
+			<header>
+			header
+				<h1>In Real Life</a></h1>
+			</header>
+
+			<nav>
+			nav
+				<ul>
+					<li id="active"><a href="#">Portfolio</a></li>
+					<li><a href = "#">About</a></li>
+				</ul>
+			</nav> <!--eventually make a hamburger side bar thing to return to the top-->
+
+			<!--<img src="pg1/01intro.png" alt="01intro">-->
+
+			<div id="imgcontainer">
+				imgcontainer
+				<script>
+				var num_imgs = 11;
+				for (var i = 1; i<=num_imgs; i++) {
+					var img = new Image();
+					var path = "";
+					path = path.concat('pg1/',i.toString(),'.png');
+					//alert(path);
+					img.src = path.toString();
+					document.getElementById("imgcontainer").appendChild(img);
+					console.log('lol');
+				}
+				
+
+				</script>
+
+			</div>
+
+			<footer>
+				Danny Diaz-Etchevehere
+			</footer>
+		</div><!--container-->
+	</body>
+
+	<!--make xml sitemap, gooanalytics-->
+</html>
