@@ -1,0 +1,178 @@
+body{
+	background-color: #000;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#container {
+	display: flex;
+    flex-flow: row wrap; 
+	margin: 0 auto; 
+	/*width: 100%;*/
+	max-width: 960px;
+	font-family: Helvetica;
+	border-width: 1px;
+	border-style: solid;
+}
+
+header{
+	order: 0;
+	flex: 0 1 50%; /*parameters are flex-grow, flex-shrink, flex-basis*/
+	border-style: solid;
+	border-width: 1px;
+	border-color: #000000;
+}
+
+h1{
+	
+	/*width: 100%;*/
+	margin: 0 auto;
+/*	border-style: solid;
+	border-width: 1px;
+	border-color: 000;*/
+	font-size: 250%;
+	text-align: center;
+	color: #000;
+}
+
+/*------------Navigation------------*/
+
+nav{
+	order:1;
+	flex: 0 1 40%;
+		border-width: 1px;
+	border-style: solid;
+	border-color: cyan;
+}
+
+nav ul{
+	/*display: flex;*/
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none; 
+	/*border-collapse: collapse;*/
+}
+
+nav li{
+	display: inline-block;
+	/*display: table-cell;*/
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: #fff;
+}
+
+.active{
+	background-color: tomato;
+}
+
+nav a{
+	display: block;
+	padding: 5px 20px;
+	color: black;
+}
+
+nav a:hover{ 
+	color: white;
+	background-color: tomato;
+}
+
+#imgcontainer{
+	order: 2;
+	flex-flow: row wrap;
+	/*border-width: 1px;
+	border-style: solid;
+	border-color: tomato;*/
+}
+
+img{ /*this applies even to the images added via js*/
+	display: block;
+	/*margin-right: auto;
+	margin-left: auto;*/
+	max-width: 100%;
+	width:auto;
+	/*ok making height 100% messes up the stretching.*/
+	height: auto;
+	/*height:100%;*/
+	min-width: 300px;
+}
+
+li{
+	margin-bottom: 5px;
+}
+
+footer{
+	order: 2;
+	margin: 0 30px 30px 30px;
+	padding: 20px;
+	background-color: rgba(190, 190, 190, 0.5);
+	width: 100%;
+		border-width: 1px;
+	border-style: solid;
+}
+
+footer h2{
+	text-align: center;
+	color: indigo;
+}
+
+a:hover{
+	color: tomato;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	font-style: italic;
+	color: indigo;
+}
+
+
+/*------------Media Queries------------*/
+
+/*@media(max-width: 720px){
+
+	nav li{
+		display: block;
+		width: 100%;
+	}
+
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media(max-width: 540px){
+
+	nav li{
+		position: static;
+		display: block;
+		width: 100%;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media(max-width: 390px){
+
+	footer{
+		width: 100%;
+	}
+
+	ul, ol{
+		font-size: 90%;
+	}
+	nav li{
+		display: block;
+		width: 100%;
+	}
+
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+}
+*/
